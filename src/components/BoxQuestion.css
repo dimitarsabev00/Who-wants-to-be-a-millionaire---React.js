@@ -1,0 +1,80 @@
+.BoxQuestion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.question {
+  width: 80%;
+  background: linear-gradient(#100241, black);
+  border: 0.2rem solid white;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.answer {
+  width: 40%;
+  text-align: center;
+  padding: 0.5rem;
+  background: linear-gradient(#0e0124, #22074d);
+  border: 1px solid white;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.answer:hover,
+.answer.active {
+  background: mediumblue;
+}
+.answer.correct {
+  animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: green;
+  }
+}
+
+.answer.wrong {
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0%,
+  22%,
+  42% {
+    background: mediumblue;
+  }
+  20%,
+  40%,
+  60% {
+    background: linear-gradient(#0e0124, #22074d);
+  }
+  62%,
+  100% {
+    background: crimson;
+  }
+}
