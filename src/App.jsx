@@ -3,7 +3,7 @@ import "./App.css";
 import BoxQuestion from "./components/BoxQuestion";
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
-  const [timeOut, setTimeOut] = useState(false);
+  const [stop, setStop] = useState(false);
   const data = [
     {
       id: 1,
@@ -100,7 +100,7 @@ function App() {
         <div className="bottom">
           <BoxQuestion
             data={data}
-            setTimeOut={setTimeOut}
+            setStop={setStop}
             questionNumber={questionNumber}
             setQuestionNumber={setQuestionNumber}
           />
