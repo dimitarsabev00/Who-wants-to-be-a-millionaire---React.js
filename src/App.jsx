@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import BoxQuestion from "./components/BoxQuestion";
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [stop, setStop] = useState(false);
+  const [earned, setEarned] = useState("$ 0");
+
   const data = [
     {
       id: 1,
@@ -91,20 +93,33 @@ function App() {
     { id: 15, amount: "$ 1.000.000" },
   ].reverse();
 
+  useEffect(() => {
+    questionNumber > 1 &&
+      setEarned(
+        moneyPyramid.find((money) => money.id === questionNumber - 1).amount
+      );
+  }, [questionNumber, moneyPyramid]);
+
   return (
     <div className="app">
       <div className="main">
-        <div className="top">
-          <div className="timer">30</div>
-        </div>
-        <div className="bottom">
-          <BoxQuestion
-            data={data}
-            setStop={setStop}
-            questionNumber={questionNumber}
-            setQuestionNumber={setQuestionNumber}
-          />
-        </div>
+        {stop ? (
+          <h1 className="endText">You earned: {earned}</h1>
+        ) : (
+          <>
+            <div className="top">
+              <div className="timer">30</div>
+            </div>
+            <div className="bottom">
+              <BoxQuestion
+                data={data}
+                setStop={setStop}
+                questionNumber={questionNumber}
+                setQuestionNumber={setQuestionNumber}
+              />
+            </div>
+          </>
+        )}
       </div>
       <div className="pyramid">
         <ul className="moneyList">
