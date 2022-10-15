@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 import BoxQuestion from "./components/BoxQuestion";
+import Timer from "./components/Timer";
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [stop, setStop] = useState(false);
@@ -112,7 +113,9 @@ function App() {
         ) : (
           <>
             <div className="top">
-              <div className="timer">30</div>
+              <div className="timer">
+                <Timer setStop={setStop} questionNumber={questionNumber} />
+              </div>
             </div>
             <div className="bottom">
               <BoxQuestion
