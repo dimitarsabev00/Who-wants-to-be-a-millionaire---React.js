@@ -387,7 +387,14 @@ function App() {
             {stop ? (
               <div className="startBox">
                 <h1>You earned: {earned}</h1>
-                <button className="playAgainBtn">Play Again</button>
+                <button
+                  className="playAgainBtn"
+                  onClick={() => {
+                    window.location.reload();
+                  }}
+                >
+                  Play Again
+                </button>
               </div>
             ) : (
               <>
