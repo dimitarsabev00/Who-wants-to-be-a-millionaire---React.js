@@ -385,7 +385,10 @@ function App() {
         <>
           <div className="main">
             {stop ? (
-              <h1 className="endText">You earned: {earned}</h1>
+              <div className="startBox">
+                <h1>You earned: {earned}</h1>
+                <button className="playAgainBtn">Play Again</button>
+              </div>
             ) : (
               <>
                 <div className="top">

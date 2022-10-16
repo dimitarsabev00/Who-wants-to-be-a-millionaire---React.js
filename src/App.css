@@ -66,11 +66,24 @@
   font-weight: 300;
 }
 
-.endText {
+.startBox {
   position: relative;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.playAgainBtn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
 }
