@@ -77,6 +77,277 @@ function App() {
         },
       ],
     },
+    {
+      id: 4,
+      question:
+        "A person with well-developed abdominal muscles is said to have a what?",
+      answers: [
+        {
+          text: "One-pack",
+          correct: false,
+        },
+        {
+          text: "Six-pack",
+          correct: true,
+        },
+        {
+          text: "12-pack",
+          correct: false,
+        },
+        {
+          text: "Family-pack",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 5,
+      question:
+        "Which two words traditionally appear onscreen at the termination of a feature film?",
+      answers: [
+        {
+          text: "The End",
+          correct: true,
+        },
+        {
+          text: "The Conclusion",
+          correct: false,
+        },
+        {
+          text: "The Finish",
+          correct: false,
+        },
+        {
+          text: "The Pizza Rolls Are Done",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 6,
+      question: "A magnet would most likely attract which of the following?",
+      answers: [
+        {
+          text: "Metal",
+          correct: true,
+        },
+        {
+          text: "Plastic",
+          correct: false,
+        },
+        {
+          text: "Wood",
+          correct: false,
+        },
+        {
+          text: "The wrong man",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 7,
+      question:
+        "Which of these names is not in the title of a Shakespeare play?",
+      answers: [
+        {
+          text: "Hamlet",
+          correct: false,
+        },
+        {
+          text: "Romeo",
+          correct: false,
+        },
+        {
+          text: "Macbeth",
+          correct: false,
+        },
+        {
+          text: "Darren",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 8,
+      question: "Where did Scotch whisky originate?",
+      answers: [
+        {
+          text: "Ireland",
+          correct: false,
+        },
+        {
+          text: "Wales",
+          correct: false,
+        },
+        {
+          text: "The United States",
+          correct: false,
+        },
+        {
+          text: "Scotland",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 9,
+      question:
+        "What name is traditionally given to the party held for a woman who is expecting a baby?",
+      answers: [
+        {
+          text: "Baby drizzle",
+          correct: false,
+        },
+        {
+          text: "Baby shower",
+          correct: true,
+        },
+        {
+          text: "Baby downpour",
+          correct: false,
+        },
+        {
+          text: "Baby deluge",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 10,
+      question:
+        "In fancy hotels, it is traditional for what tantalizing treat to be left on your pillow?",
+      answers: [
+        {
+          text: "A pretzel",
+          correct: false,
+        },
+        {
+          text: "An apple",
+          correct: false,
+        },
+        {
+          text: "A mint",
+          correct: true,
+        },
+        {
+          text: "A photo of Wolf Blitzer",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 11,
+      question:
+        "In the United States, what is traditionally the proper way to address a judge?",
+      answers: [
+        {
+          text: "Your holiness",
+          correct: false,
+        },
+        {
+          text: "Your honor",
+          correct: true,
+        },
+        {
+          text: "Your eminence",
+          correct: false,
+        },
+        {
+          text: "You da man!",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 12,
+      question:
+        "Which of these pairs of apps offers roughly the same type of service?",
+      answers: [
+        {
+          text: "Snapchat and Grubhub",
+          correct: false,
+        },
+        {
+          text: "Whatsapp and SHAREit",
+          correct: false,
+        },
+        {
+          text: "TikTok and Spotify",
+          correct: false,
+        },
+        {
+          text: "Lyft and Uber",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 13,
+      question: `The popular children's song "It's Raining, It's Pouring" mentions an "old man" doing what?`,
+      answers: [
+        {
+          text: "Snoring",
+          correct: true,
+        },
+        {
+          text: "Cooking",
+          correct: false,
+        },
+        {
+          text: "Laughing",
+          correct: false,
+        },
+        {
+          text: "Yelling at squirrels",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 14,
+      question: `At a restaurant, someone who "foots the bill" does what?`,
+      answers: [
+        {
+          text: "Kisses it",
+          correct: false,
+        },
+        {
+          text: "Rips it up",
+          correct: false,
+        },
+        {
+          text: "Hopes to get lucky",
+          correct: false,
+        },
+        {
+          text: "Pays it",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 15,
+      question: `In which of these films does Whoopi Goldberg dress up as a nun?`,
+      answers: [
+        {
+          text: "Sister Act",
+          correct: true,
+        },
+        {
+          text: "Ghost",
+          correct: false,
+        },
+        {
+          text: "The Color Purple",
+          correct: false,
+        },
+        {
+          text: "How Judas Got His Groove Back",
+          correct: false,
+        },
+      ],
+    },
   ];
 
   const moneyPyramid = useMemo(
